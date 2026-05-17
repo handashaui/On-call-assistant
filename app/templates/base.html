@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}On-Call Assistant{% endblock %}</title>
+  <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="/v1">On-Call Assistant</a>
+    <nav class="nav">
+      <a href="/v1">V1</a>
+      <a href="/v2">V2</a>
+      <a href="/v3">V3</a>
+    </nav>
+  </header>
+  <main class="container">
+    {% block content %}{% endblock %}
+  </main>
+  <script src="/static/js/chat.js"></script>
+</body>
+</html>

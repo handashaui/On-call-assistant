@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block title %}V1 Keyword Search{% endblock %}
+
+{% block content %}
+<section class="panel">
+  <div class="section-head">
+    <h1>V1 关键词搜索</h1>
+    <span class="badge">keyword</span>
+  </div>
+  <form class="search-form" data-endpoint="/v1/search">
+    <input name="q" type="search" placeholder="OOM / 故障 / CDN / &" autocomplete="off" autofocus>
+    <button type="submit">搜索</button>
+  </form>
+  <div class="results" aria-live="polite"></div>
+</section>
+{% endblock %}
