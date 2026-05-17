@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block title %}V2 Semantic Search{% endblock %}
+
+{% block content %}
+<section class="panel">
+  <div class="section-head">
+    <h1>V2 语义搜索</h1>
+    <span class="badge">semantic</span>
+  </div>
+  <form class="search-form" data-endpoint="/v2/search">
+    <input name="q" type="search" placeholder="服务器挂了 / 黑客攻击 / 机器学习模型出问题" autocomplete="off" autofocus>
+    <button type="submit">搜索</button>
+  </form>
+  <div class="results" aria-live="polite"></div>
+</section>
+{% endblock %}
