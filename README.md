@@ -36,6 +36,11 @@ hashing embedding so the demo still runs offline.
 - `app/services/hybrid_search.py`: combines semantic and keyword scores.
 - `app/services/agent.py`: V3 Agent workflow and `readFile` tool.
 
+## Prompt And Screenshots
+
+- Prompt screenshots: `prompt/`
+- App screenshots: `screenshot/`
+
 ## API
 
 ```bash
